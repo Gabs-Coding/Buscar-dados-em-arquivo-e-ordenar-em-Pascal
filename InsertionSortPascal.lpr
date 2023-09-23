@@ -10,9 +10,10 @@ var
   Valor: integer;
 
 begin
-  WriteLn('What is the directory for search the archives?');
+  WriteLn('Qual é o diretório para pesquisar os arquivos?');
   ReadLn(CaminhoDaPasta);
 
+  //
   if FindFirst(CaminhoDaPasta + '*.txt', faAnyFile, ArquivoInfo) = 0 then
   begin
     repeat
@@ -31,7 +32,6 @@ begin
     FindClose(ArquivoInfo);
   end
   else
-    writeln('Todos os arquivos foram ordenados.');
-
+    writeln('Nenhum arquivo encontrado.');
   readln;
 end.

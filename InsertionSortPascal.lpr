@@ -63,10 +63,10 @@ begin
         Inc(Contador);
       end;
 
-    {A variável de controle abaixo serve para reajustar o vetor dinamicamente para que
-    ele comporte a quantidade de elementos do arquivo. Caso precise utilizar em
-    outro código, com outra disposição de arquivos, mude essa variável e
-    reajustar a função SetLength() para os parâmetros desejados.}
+    {A variável de controle abaixo serve para reajustar o vetor dinamicamente
+    para que ele comporte a quantidade de elementos do arquivo. Caso precise
+    utilizar em outro código, com outra disposição de arquivos, mude essa va-
+    riável e reajustar a função SetLength() para os parâmetros desejados.}
     Inc(Controle);
     until FindNext(ArquivoInfo) <> 0;
 

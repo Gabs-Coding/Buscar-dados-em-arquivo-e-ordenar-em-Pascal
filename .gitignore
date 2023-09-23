@@ -1,0 +1,8 @@
+# .something
+*.exe
+*.lpi
+*.lps
+
+# folders
+lib/
+backup/

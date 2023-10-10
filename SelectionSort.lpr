@@ -1,4 +1,4 @@
-program BuscarArquivosEordenarGenerico;
+program SelectionSort;
 
 uses
   SysUtils, DateUtils;
@@ -41,10 +41,11 @@ begin
   CloseFile(ArquivoLog);
 end;
 
-procedure OrdenarLista(var ArrayValores: Array of Integer; n: Integer);
+procedure QuickSort(var ArrayValores: Array of Integer; n: Integer);
 
 var
   // Variáveis locais pertinentes ao método de ordenação escolhido
+
 
 begin
   // Método de classificação <insira o método aqui> propriamente dito a seguir.
@@ -183,7 +184,7 @@ begin
       TempoInicio := Now;
 
       // Chamando o procedimento de ordenação do array.
-      OrdenarLista(ArrayValores, n);
+      QuickSort(ArrayValores, n);
 
       // Inicializando variável 2 para calcular o tempo levado para a ordenação.
       TempoFim := Now;

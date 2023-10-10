@@ -1,4 +1,4 @@
-program SelectionSort;
+program BuscarDadosEmArquivoGenérico;
 
 uses
   SysUtils, DateUtils;
